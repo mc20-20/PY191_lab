@@ -5,6 +5,7 @@ This is a tiny text editor.
 Edit me!"""
 
 cursor = 0
+# I initialized the display here
 display = text[:cursor] + "|" + text[cursor:]
 
 
@@ -25,7 +26,8 @@ def draw(screen):
     # display = "|Hello"
     #
     # ---------------- TODO ----------------
-    
+    # Note: I moved the display to outside the loop because having it inside was
+    # creating problems with my code
     # ----------------------------------------
 
     for row, line in enumerate(display.split("\n")):
